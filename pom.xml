@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+         xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 https://maven.apache.org/xsd/maven-4.0.0.xsd">
+    <modelVersion>4.0.0</modelVersion>
+
+    <groupId>com.dennis.hypermarket</groupId>
+    <artifactId>hypermarket</artifactId>
+    <version>0.0.1-SNAPSHOT</version>
+    <name>hypermarket</name>
+    <description>hypermarket</description>
+    <packaging>pom</packaging>
+
+    <modules>
+        <module>hypermarket-product</module>
+        <module>hypermarket-coupon</module>
+        <module>hypermarket-order</module>
+        <module>hypermarket-ware</module>
+        <module>hypermarket-member</module>
+    </modules>
+
+</project>
