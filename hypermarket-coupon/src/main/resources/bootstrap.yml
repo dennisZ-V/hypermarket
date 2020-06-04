@@ -1,0 +1,26 @@
+spring.application.name: hypermarket-coupon
+spring.cloud.nacos.config.file-extension: yaml
+spring.cloud.nacos.config.server-addr: 127.0.0.1:8848
+
+spring:
+  datasource:
+    driver-class-name: com.mysql.cj.jdbc.Driver
+    url: jdbc:mysql://192.168.0.130:3306/hypermarket_sms
+    username: root
+    password: 123456
+  cloud:
+    nacos:
+      discovery:
+        server-addr: 127.0.0.1:8848
+
+logging.level:
+  com.dennis.hypermarket.*: debug
+
+mybatis-plus:
+  mapper-locations: classpath:/mapper/**/*.xml
+  global-config:
+    db-config:
+      id-type: auto
+
+server:
+  port: 9094
