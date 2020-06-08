@@ -163,3 +163,29 @@
 
    网关作为流量的入口，常用功能包括路由转发、权限检验、限流控制。
 
+2. 步骤：
+
+   - 新建gateway项目
+
+   - 引入依赖
+
+     ```xml
+     <dependency>
+         <groupId>org.springframework.cloud</groupId>
+         <artifactId>spring-cloud-starter-gateway</artifactId>
+     </dependency>
+     ```
+
+   - 修改配置文件
+
+     ```yaml
+     spring:
+     	gateway:
+           routes:
+             - id: test_route
+               uri: https://www.baidu.com
+               predicates:
+                 - Query=url, baidu
+     ```
+
+     
